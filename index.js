@@ -82,37 +82,45 @@ let roundedNumber = 153.8
 
 if (roundedNumber-Math.floor(roundedNumber)>= 0.5){
     roundedNumber = Math.ceil(roundedNumber)
-    console.log(roundedNumber);
+    
 }else {
     roundedNumber = Math.floor(roundedNumber)
-    console.log(roundedNumber);
+    
 }
+
+console.log(roundedNumber);
 
 // 08 - Rounded but better, Méthode 2
 
-let roundedNumber2 = 3.4356
-
+let roundedNumber2 = 43.2356
 let roundedNumberString = roundedNumber2.toString()
+let pos1 = roundedNumberString.indexOf(".")+1
+let pos2 = roundedNumberString.indexOf(".")+2
+let pos = roundedNumberString.substring(pos1 ,pos2)
 
-if (roundedNumberString.substring(roundedNumberString.indexOf(".")+1,roundedNumberString.indexOf(".")+2 )>=5){
+if (pos>=5){
 	roundedNumber2 = Math.ceil(roundedNumber2)
-    console.log(roundedNumber2);
+    
 }else {
     roundedNumber2 = Math.floor(roundedNumber2)
-    console.log(roundedNumber2);
+    
 }
+
+console.log(roundedNumber2);
 
 // 09 - Rounded but better, Méthode 3
 
-let roundedNumber3 = 134.6864564
-let roundedNumberindex= (roundedNumber3.toString()).indexOf(".")+1
-let roundedNumberString2 = (roundedNumber3.toString()).split("")
+let roundedNumber3 = 34.2864564
+let roundedNumberString2 = roundedNumber3.toString()
+let roundedNumberindex= roundedNumberString2.indexOf(".")+1
+let roundedNumberSplit = roundedNumberString2.split("")
 
-if (roundedNumberString2[roundedNumberindex]>=5){
+if (roundedNumberSplit[roundedNumberindex]>=5){
 	roundedNumber3 = Math.ceil(roundedNumber3)
-    console.log(roundedNumber3);
+    
 }else {
     roundedNumber3 = Math.floor(roundedNumber3)
-    console.log(roundedNumber3);
+    
 }
 
+console.log(roundedNumber3);
