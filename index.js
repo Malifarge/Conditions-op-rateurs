@@ -78,7 +78,7 @@ switch (Month) {
 
 // 07 - Rounded but better
 
-let roundedNumber = 3.2
+let roundedNumber = 153.8
 
 if (roundedNumber-Math.floor(roundedNumber)>= 0.5){
     roundedNumber = Math.ceil(roundedNumber)
@@ -87,3 +87,19 @@ if (roundedNumber-Math.floor(roundedNumber)>= 0.5){
     roundedNumber = Math.floor(roundedNumber)
     console.log(roundedNumber);
 }
+
+// 08 - Rounded but better, Méthode 2
+
+let roundedNumber2 = 3.4356
+
+roundedNumber2 = roundedNumber2.toString()
+
+if (roundedNumber2.substring(roundedNumber2.indexOf(".")+1,roundedNumber2.indexOf(".")+2 )>=5){
+	roundedNumber2 = Math.ceil(roundedNumber2)
+    console.log(roundedNumber2);
+}else {
+    roundedNumber2 = Math.floor(roundedNumber2)
+    console.log(roundedNumber2);
+}
+
+
