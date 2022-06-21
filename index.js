@@ -20,3 +20,13 @@ if (score >= limit){
     console.log("Oh nooo...");
 }
 
+// 03 - Condition II
+
+const password = "azerty"
+
+if (password.length > 5){
+    console.log("The password is secure");
+} else{
+    console.log("Password is not secured");
+}
+
