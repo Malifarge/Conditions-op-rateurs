@@ -112,14 +112,14 @@ if (pos>=5){
 
 // 09 - Rounded but better, Méthode 3
 
-const roundedNumber3 = 34.8864564
+const roundedNumber3 = 34.2864564
 const roundedNumberString2 = roundedNumber3.toString()
 const roundedNumberindex= roundedNumberString2.indexOf(".")+1
 const roundedNumberSplit = roundedNumberString2.split("")
-let mynumber = roundedNumberSplit[roundedNumberindex]
-mynumber = Number (mynumber)
+let myNumber = roundedNumberSplit[roundedNumberindex]
+myNumber = Number (myNumber)
 
-if (roundedNumberSplit[roundedNumberindex]>=5){
+if (myNumber>=5){
 	console.log(Math.ceil(roundedNumber3));
     
 }else {
