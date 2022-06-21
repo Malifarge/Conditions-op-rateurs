@@ -7,14 +7,17 @@ console.log(test ===bis);
 console.log(test !==bis);
 console.log(test > bis);
 console.log(test < bis);
+console.log(test >= bis);
+console.log(test <= bis);
 
 
 // 02 - Condition
 
 const limit = 50
 const score = 20
+let compare = score >=limit
 
-if (score >= limit){
+if (compare){
     console.log("Ok good !");
 } else {
     console.log("Oh nooo...");
@@ -22,9 +25,10 @@ if (score >= limit){
 
 // 03 - Condition II
 
-const password = "aze"
+const password = "azerty"
+let passwordlength = password.length >5
 
-if (password.length > 5){
+if (passwordlength){
     console.log("The password is secure");
 } else{
     console.log("Password is not secured");
@@ -32,9 +36,9 @@ if (password.length > 5){
 
 // 04 - Condition III
 
-if (score >= limit && password.length > 5){
+if (compare && passwordlength){
     console.log("Everything is good");
-} else if (score >= limit || password.length > 5) {
+} else if (compare || passwordlength) {
     console.log("Something is good");  
 }else {
     console.log("Nothing is good");
@@ -78,9 +82,10 @@ switch (Month) {
 
 // 07 - Rounded but better
 
-let roundedNumber = 153.8
+let roundedNumber = 53.265
+let delta = roundedNumber-Math.floor(roundedNumber)
 
-if (roundedNumber-Math.floor(roundedNumber)>= 0.5){
+if (delta>= 0.5){
     roundedNumber = Math.ceil(roundedNumber)
     
 }else {
@@ -119,8 +124,7 @@ if (roundedNumberSplit[roundedNumberindex]>=5){
 	roundedNumber3 = Math.ceil(roundedNumber3)
     
 }else {
-    roundedNumber3 = Math.floor(roundedNumber3)
-    
+ 	roundedNumber3 = Math.floor(roundedNumber3)
 }
 
 console.log(roundedNumber3);
