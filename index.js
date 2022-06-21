@@ -92,9 +92,9 @@ if (roundedNumber-Math.floor(roundedNumber)>= 0.5){
 
 let roundedNumber2 = 3.4356
 
-roundedNumber2 = roundedNumber2.toString()
+let roundedNumberString = roundedNumber2.toString()
 
-if (roundedNumber2.substring(roundedNumber2.indexOf(".")+1,roundedNumber2.indexOf(".")+2 )>=5){
+if (roundedNumberString.substring(roundedNumberString.indexOf(".")+1,roundedNumberString.indexOf(".")+2 )>=5){
 	roundedNumber2 = Math.ceil(roundedNumber2)
     console.log(roundedNumber2);
 }else {
@@ -102,4 +102,17 @@ if (roundedNumber2.substring(roundedNumber2.indexOf(".")+1,roundedNumber2.indexO
     console.log(roundedNumber2);
 }
 
+// 09 - Rounded but better, Méthode 3
+
+let roundedNumber3 = 134.6864564
+let roundedNumberindex= (roundedNumber3.toString()).indexOf(".")+1
+let roundedNumberString2 = (roundedNumber3.toString()).split("")
+
+if (roundedNumberString2[roundedNumberindex]>=5){
+	roundedNumber3 = Math.ceil(roundedNumber3)
+    console.log(roundedNumber3);
+}else {
+    roundedNumber3 = Math.floor(roundedNumber3)
+    console.log(roundedNumber3);
+}
 
