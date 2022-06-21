@@ -54,3 +54,25 @@ if (random === 6){
 }else {
     console.log("So close...");
 }
+
+// 06 - Month
+
+let Month = "October"
+
+switch (Month) {
+	case "March": case "April" : case "May": 
+		console.log("spring")
+		break;
+	case "June": case "July": case "August":
+		console.log("Summer")
+		break;
+	case "September": case "October": case "November": 
+		console.log("Automn")
+		break;
+	case "December" : case "January" : case "February": 
+		console.log("Winter")
+		break;
+	default: 
+		console.log("That's not a month...")
+}
+
