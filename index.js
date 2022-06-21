@@ -97,34 +97,33 @@ console.log(roundedNumber);
 
 // 08 - Rounded but better, Méthode 2
 
-let roundedNumber2 = 43.2356
-let roundedNumberString = roundedNumber2.toString()
-let pos1 = roundedNumberString.indexOf(".")+1
-let pos2 = roundedNumberString.indexOf(".")+2
+const roundedNumber2 = 43.2356
+const roundedNumberString = roundedNumber2.toString()
+const pos1 = roundedNumberString.indexOf(".")+1
+const pos2 = roundedNumberString.indexOf(".")+2
 let pos = roundedNumberString.substring(pos1 ,pos2)
+pos = Number (pos)
 
 if (pos>=5){
-	roundedNumber2 = Math.ceil(roundedNumber2)
+	console.log(Math.ceil(roundedNumber2));
     
 }else {
-    roundedNumber2 = Math.floor(roundedNumber2)
+    console.log(Math.floor(roundedNumber2));
     
 }
-
-console.log(roundedNumber2);
 
 // 09 - Rounded but better, Méthode 3
 
-let roundedNumber3 = 34.2864564
-let roundedNumberString2 = roundedNumber3.toString()
-let roundedNumberindex= roundedNumberString2.indexOf(".")+1
-let roundedNumberSplit = roundedNumberString2.split("")
+const roundedNumber3 = 34.8864564
+const roundedNumberString2 = roundedNumber3.toString()
+const roundedNumberindex= roundedNumberString2.indexOf(".")+1
+const roundedNumberSplit = roundedNumberString2.split("")
+let mynumber = roundedNumberSplit[roundedNumberindex]
+mynumber = Number (mynumber)
 
 if (roundedNumberSplit[roundedNumberindex]>=5){
-	roundedNumber3 = Math.ceil(roundedNumber3)
+	console.log(Math.ceil(roundedNumber3));
     
 }else {
- 	roundedNumber3 = Math.floor(roundedNumber3)
+ 	console.log(Math.floor(roundedNumber3));
 }
-
-console.log(roundedNumber3);
