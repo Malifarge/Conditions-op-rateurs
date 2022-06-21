@@ -39,3 +39,18 @@ if (score >= limit && password.length > 5){
 }else {
     console.log("Nothing is good");
 }
+
+// 05 - Random
+
+const min = 1
+const max = 6
+
+const random = Math.floor(Math.random() * max) + min
+
+console.log(random);
+
+if (random === 6){
+    console.log("Yes i win");
+}else {
+    console.log("So close...");
+}
