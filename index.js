@@ -12,7 +12,7 @@ console.log(test < bis);
 // 02 - Condition
 
 const limit = 50
-const score = 45
+const score = 20
 
 if (score >= limit){
     console.log("Ok good !");
@@ -22,7 +22,7 @@ if (score >= limit){
 
 // 03 - Condition II
 
-const password = "azerty"
+const password = "aze"
 
 if (password.length > 5){
     console.log("The password is secure");
@@ -30,3 +30,12 @@ if (password.length > 5){
     console.log("Password is not secured");
 }
 
+// 04 - Condition III
+
+if (score >= limit && password.length > 5){
+    console.log("Everything is good");
+} else if (score >= limit || password.length > 5) {
+    console.log("Something is good");  
+}else {
+    console.log("Nothing is good");
+}
