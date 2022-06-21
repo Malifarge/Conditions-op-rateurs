@@ -76,3 +76,14 @@ switch (Month) {
 		console.log("That's not a month...")
 }
 
+// 07 - Rounded but better
+
+let roundedNumber = 3.2
+
+if (roundedNumber-Math.floor(roundedNumber)>= 0.5){
+    roundedNumber = Math.ceil(roundedNumber)
+    console.log(roundedNumber);
+}else {
+    roundedNumber = Math.floor(roundedNumber)
+    console.log(roundedNumber);
+}
