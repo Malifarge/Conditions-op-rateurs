@@ -82,18 +82,16 @@ switch (Month) {
 
 // 07 - Rounded but better
 
-let roundedNumber = 53.265
-let delta = roundedNumber-Math.floor(roundedNumber)
+const roundedNumber = 53.265
+const delta = roundedNumber-Math.floor(roundedNumber)
 
 if (delta>= 0.5){
-    roundedNumber = Math.ceil(roundedNumber)
+    console.log(Math.ceil(roundedNumber));
     
 }else {
-    roundedNumber = Math.floor(roundedNumber)
+    console.log(Math.floor(roundedNumber));
     
 }
-
-console.log(roundedNumber);
 
 // 08 - Rounded but better, Méthode 2
 
